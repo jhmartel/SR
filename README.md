@@ -1,4 +1,2 @@
-# SR
-Special Relativity
-
-We include some articles on Special Relativity, and especially its foundations.
+# Einstein's Special Relativity
+This section includes articles on Special Relativity.
