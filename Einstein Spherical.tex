@@ -39,7 +39,7 @@ sorting=nyt,
 }
 
 
-\newtheorem{thm}{Theorem}
+\newtheorem*{thm}{Theorem}
 \newtheorem*{half}{Halfspace Condition}
 \newtheorem{lem}[thm]{Lemma}
 \newtheorem{prop}[thm]{Proposition}
@@ -89,35 +89,30 @@ sorting=nyt,
 
 \maketitle
 
-The subject of this brief note is Einstein's alleged proof of the Lorentz invariance of spherical light waves in his special relativity theory. Our purpose is to describe a positive gap in above mentioned proof, and to further demonstrate the invalidity of its conclusion. Recall that the purpose of Einstein's alleged proof is to reconcile the fundamental assumptions of special relativity, namely
+The subject of this brief note is Einstein's alleged proof of the Lorentz invariance of spherical light waves in his special relativity theory. Our purpose is to describe a positive gap in above mentioned proof, and to further demonstrate the invalidity of its conclusion. The purpose of Einstein's alleged proof is to reconcile the fundamental assumptions of special relativity, namely
 \begin{itemize}
 
 \item[(A1)] that the laws of physics are the same in all nonaccelerated reference frames, i.e. if $K'$ is a coordinate system moving uniformly (and devoid of rotation) with respect to a coordinate system $K$, then natural phenomena run their course with respect to $K'$ according to exactly the same laws as with respect to $K$. 
 
-\item[(A2)] that light in vacuum propogates along straight lines with constant velocity $c\approx 300,000$ metres per second.
+\item[(A2)] that light in vacuum propagates along straight lines with constant velocity $c\approx 300,000$ metres per second.
 
 \end{itemize}
 
-Assumption (A2) was termed ``the Law of Propogation of Light", and being a \emph{law} was therefore subject to assumption (A1). 
+%Assumption (A2) was termed ``the Law of Propogation of Light", and being a \emph{law} was therefore subject to assumption (A1). 
 
 In Einstein's own words \cite[Ch.7, 11]{einstein2019relativity}:
 
-\begin{quote} ``\emph{There is hardly a simpler law in physics than that according to which light is propogated in empty space. Every child at school knows, or believes he knows, that this propogation takes place in straight lines with velocity $c=300 000 m/sec$.\ldots"Who would imagine that this simple law has plunged the conscientiously thoughtful physicist into the greatest intellectual difficulties?"} \end{quote}
+\begin{quote} ``\emph{There is hardly a simpler law in physics than that according to which light is propagated in empty space. Every child at school knows, or believes he knows, that this propagation takes place in straight lines with velocity $c=300, 000 m/sec$.\ldots Who would imagine that this simple law has plunged the conscientiously thoughtful physicist into the greatest intellectual difficulties?"} \end{quote}
 
-Notice the occurence of ``law" in the above quote. Einstein assumes that (A2) \emph{is} a \emph{law}, namely the law of propogation of light. To be simultaneously consistent with (A1) then requires (A2) to be satisfied in every nonaccelerated reference frame. However the conjunction of (A1) and (A2), abbreviated (A12), is contradictory according to classical mechanics and Fizeau's law of addition of velocities, to say the least. However Einstein claims -- and this popularly lauded as among his greatest intellectual achievements -- that this is only an \emph{apparent} incompatibility, and which is resolved by postulating that Lorentz transformations relate the measurements of space- and time-coordinates in the reference frames $K, K'$. 
-
-But we submit that Einstein's argument is incomplete, and his conclusion incorrect. Einstein's error in the first steps of his theory has been elaborated by other authors, notably \cite{bryant}, \cite{crothers}. The present note arises from the author's own study of the controversy, and his attempt to clearly identify the incompatibility in plain mathematical terms. 
+Notice the occurence of ``law" in the above quote. Einstein assumes that (A2) \emph{is} a \emph{law}, namely the law of propagation of light. To be simultaneously consistent with (A1) then requires (A2) to be satisfied in every nonaccelerated reference frame. However the conjunction of (A1) and (A2), abbreviated (A12), is contradictory according to classical mechanics and Fizeau's law of addition of velocities, to say the least. However Einstein claims -- and this popularly lauded as among his greatest intellectual achievements -- that this is only an \emph{apparent} incompatibility, and which is resolved by postulating that Lorentz transformations relate the measurements of space- and time-coordinates in the reference frames $K, K'$. But we submit that Einstein's argument is incomplete, and his conclusion incorrect. Einstein's error in the first steps of his theory has been elaborated by other authors, notably \cite{bryant}, \cite{crothers}. The present note arises from the author's own study of the controversy, and his attempt to identify the incompatibility in plain mathematical terms. 
 
 The positive gap has a twofold source. Firstly from Einstein's confusing quadratic expressions like \begin{equation}\label{a}\xi^2+\eta^2+\zeta^2=c^2 \tau^2
-\end{equation} with ``the equation of a sphere". Nay, \eqref{a} is a three-dimensional cone in the four variables $\xi, \eta, \zeta, \tau$. Yes, it contains numerous ``spherical" two-dimensional subsets. For instance, the standard geometric sphere $S$ centred at the origin satisfies the further condition that $$\del \tau / \del \xi=0, ~ \del \tau / \del \eta=0, \del \tau / \del \zeta=0,$$ where $\del \tau / \del \xi$ denotes the directional derivative constrained to $S$. In short, a geometric sphere requires that $\xi^2+\eta^2+\zeta^2$ be \emph{constant}. However the Lorentz $SO(3,1)$-invariance of the quadratic form $h=x^2+y^2+z^2-c^2t^2$ in no way implies the Lorentz invariance of the forms $h_1=x^2+y^2+z^2$ and $h_2=c^2 t^2.$ Consequently we find Einstein's attempt to resolve the incompatibility of (A12) invalidated by basic computations. 
+\end{equation} with ``the equation of a sphere". Nay, \eqref{a} is a three-dimensional cone in the four variables $\xi, \eta, \zeta, \tau$. Yes, it contains numerous ``spherical" two-dimensional subsets. For instance, the standard geometric sphere $S$ centred at the origin simultaneously satisfies \eqref{a} and the further condition $$\frac{1}{2}d(\xi^2+\eta^2+\zeta^2)=\xi d\xi+\eta d\eta +\zeta d\zeta=0 ~~\text{~on~~} S.$$ In short, the standard geometric sphere requires that $\xi^2+\eta^2+\zeta^2$, and consequently $c^2\tau^2$, be \emph{constant}. This leads us to Einstein's second error, namely that the Lorentz $SO(3,1)$ invariance of the quadratic form $h=x^2+y^2+z^2-c^2t^2$ in no way implies the Lorentz invariance of the forms $h_1=x^2+y^2+z^2$ and $h_2=c^2 t^2.$ These two errors imply Einstein's attempt to resolve (A12) is readily invalidated by basic computations.
 
 %The argument is general and applies to split orthogonal groups of arbitrary rank, e.g. $G=SO(n,1)$,$n=1,2,3,\ldots$. %In the most basic case of $SO(1,1)$, the key observation is that a quadratic expression like $x^2=r^2$ in the $xr$-variables does not represent a ``sphere"; the expression represents a sphere of radius $r$ and only if the additional equation $\del x /\del r =0$ holds for every $x$. But the expression $\del x / \del r$ is not a tensor, i.e. satisfies no invariant 
 
 %\section{}
-To repeat, Minkowski's form $h=x^2+y^2+z^2-c^2t^2$ is invariant with respect to Lorentz transformations, i.e. the Lie group $G=SO(h)=SO(3,1)$ where invariance means $\xi^2+\eta^2+\zeta^2-c^2 \tau^2$ is numerically equal to $x^2+y^2+z^2-c^2 t^2$ for every Lorentz transform $(\xi, \eta, \zeta, \tau)=(x,y,z,t).\phi$. As we argue below, Minkowski's form is essentially the \emph{only} Lorentz invariant quadratic form on $\bR^4$. 
-
-
-Now Einstein's argument concerns the geometry of a wave front generated by a light pulse, i.e. the action of the Lorentz group on subsets of the null cone $N=\{h=0\}$. Obviously $N$ is $G$-invariant and satisfies $x^2+y^2+z^2=c^2 t^2$. Let $\sC$ be the vector space of (possibly degenerate) quadratic forms $q$ on $\bR^4$, and let $h\in \sC$ be Minkowski's form. 
+To repeat, Minkowski's form $h=x^2+y^2+z^2-c^2t^2$ is invariant with respect to Lorentz transformations, i.e. the Lie group $G=SO(h)=SO(3,1)$. Invariance says $\xi^2+\eta^2+\zeta^2-c^2 \tau^2$ is numerically equal to $x^2+y^2+z^2-c^2 t^2$ for every Lorentz transform $(\xi, \eta, \zeta, \tau)=\phi.(x,y,z,t)$. But as we argue below, Minkowski's form is essentially the \emph{only} Lorentz invariant quadratic form on $\bR^4$. Now Einstein's argument concerns the geometry of a wave front generated by a light pulse, and the action of the Lorentz group on subsets of the null cone $N=\{h=0\}$. Obviously $N$ is $G$-invariant and defined by the equation $x^2+y^2+z^2=c^2 t^2$. Let $\sC$ be the vector space of (possibly degenerate) quadratic forms $q$ on $\bR^4$, and let $h\in \sC$ be Minkowski's form. 
 
 %The Lorentz group $G$ acts linearly and irreducibly on $\bR^{3,1}=\bR^4$, so there are no proper $G$-invariant linear subspaces. 
 
@@ -136,13 +131,18 @@ Now Einstein's argument concerns the geometry of a wave front generated by a lig
 
 
 \begin{thm}
-If $q\in \sC$ is a quadratic form on $\bR^4$ such that the restriction $q|_N$ is $G$-invariant, then $q$ is proportional to $h$. That is, the Minkowski form is the unique Lorentz invariant quadratic form (modulo scalars) on $\bR^4$.
+If $q\in \sC$ is a quadratic form on $\bR^4$ such that the restriction $q|_N$ is $G$-invariant, then $q$ is proportional to $h$. 
 \end{thm} 
 \begin{proof}
-The $G$-action on $N$ is transitive on nonzero vectors. Therefore if $q|_N$ is $G$-invariant, then $q|_N$ is constant. By continuity it follows that $q|_N$ is identically zero since $q|_N=q(0)=0$. So the zero locus of $q$ contains the zero locus of $h$, i.e. $N\subset \{q=0\}$. Finally a theorem of J. H. Elton implies $q$, $h$ are indeed proportional, c.f. \cite{elton2010indefinite}. The details are as follows: let $q\otimes_\otimes \bR \bC$ and $h\otimes_\bR \bC$ be the complexification of the real quadratic forms $q,h$. Thus $q\otimes_\bR \bC: \bR^4 \otimes_\bR \bC \to \bC$ is a complex-valued quadratic form. Elton's argument depends on establishing the following inclusion \begin{equation}\label{b}
+The $G$-action on $N$ is transitive on nonzero vectors. Therefore if $q|_N$ is $G$-invariant, then $q|_N$ is constant. By continuity it follows that $q|_N$ is identically zero since $q|_N=q(0)=0$. So the zero locus of $q$ contains the zero locus of $h$, i.e. \begin{equation}\label{c} N\subset \{q=0\}.
+\end{equation}
+
+Now we use a theorem of J. H. Elton to conclude $q$, $h$ are proportional, c.f. \cite{elton2010indefinite}. We outline his argument. Let $q\otimes_\bR \bC$ and $h\otimes_\bR \bC$ be the complexification of the real quadratic forms $q,h$. Thus $q\otimes_\bR \bC: \bR^4 \otimes_\bR \bC \to \bC$ is a complex-valued quadratic form. Elton's argument depends on establishing the following inclusion \begin{equation}\label{b}
 \{h\otimes \bC=0\} \subset \{q\otimes \bC=0\}.
 \end{equation}
-According to the tensor construction we have $h\otimes \bC (x+iy)=h(x)-h(y) + 2i h(x,y)$. Therefore $h\otimes \bC(x+iy)=0$ if and only if $h(x)=h(y)$ and $h(x,y)=0$, where $h(\cdot, \cdot)$ is the bilinear form canonically defined by $h$. Once the inclusion \eqref{b} is established, Hilbert's Nullstellensatz \cite{eisenbud2013commutative} implies $q\otimes \bC=\lambda h\otimes \bC$ for some $\lambda \in \bC$. But obviously $\lambda\in \bR$ and the theorem follows.
+According to the tensor construction we have $h\otimes \bC (x+iy)=h(x)-h(y) + 2i h(x,y)$. Therefore $h\otimes \bC(x+iy)=0$ if and only if $h(x)=h(y)$ and $h(x,y)=0$, where $h(\cdot, \cdot)$ is the bilinear form canonically defined by $h$. Elton's proof reduces to establishing the implication: if \eqref{c} is satisfied, then $h(x)=h(y)$ and $h(x,y)=0$ implies $q(x)=q(y)$ and $q(x,y)=0$ for all $x,y\in \bR^4$. That $q$ vanishes on the null cone $N$ implies $q$  is indefinite if it is not identically zero.
+
+Once the inclusion \eqref{b} is established, Hilbert's Nullstellensatz \cite{eisenbud2013commutative} implies $q\otimes \bC=\lambda \cdot h\otimes \bC$ for some $\lambda \in \bC$. But then obviously $\lambda\in \bR$ and the theorem follows.
 %We have three cases supposing $h\otimes \bC(x+iy)=0$.
 %Case 1: if $h(x)=0$, then $h(y)=0$. But then $h(x+y)=h(x)+h(y)+2h(x,y)=0$ according to the assumptions, and it follows that $q\otimes \bC(x+iy)=0$. 
 %Case 2: if $h(x)>0$, then rescaling we can choose $h(x)=1$. Since $h$ is indefinite, there exists $z$ such that $h(z)<0$
@@ -150,18 +150,16 @@ According to the tensor construction we have $h\otimes \bC (x+iy)=h(x)-h(y) + 2i
 \end{proof}
 
  %This means there exists only one canonical quadratic form with respect to Lorentz transformations.
-
-Now we return to the subject at hand, namely Einstein's alleged proof that (A12) are compatible with respect to Lorentz symmetry. The substance of Einstein's second error is this: \begin{quote} \textbf{the Lorentz invariance of $h, N$ does not imply the Lorentz invariance of the forms $h_1=x^2+y^2+z^2$ and $h_2=c^2 t^2$.} \end{quote}
-
-The two-dimensional case in $xt$-variables is illustrative, where $h=x^2-c^2 t^2$ is invariant with respect to the group $G=SO(1,1)$ generated by $a_\theta:=\begin{pmatrix} \cosh \theta & \sinh \theta \\
+That is, the Minkowski form is the unique Lorentz invariant quadratic form (modulo scalars) on $\bR^4$ which vanishes on the null cone. Now we return to the subject at hand, namely Einstein's alleged proof that (A12) are compatible with respect to Lorentz symmetry. For illustration, consider the two-dimensional case in the variables $x,t$. Here we find $h=x^2-c^2 t^2$ is invariant with respect to the group $G=SO(1,1)$ generated by $a_\theta:=\begin{pmatrix} \cosh \theta & \sinh \theta \\
 \sinh \theta & \cosh \theta
-\end{pmatrix}$, where $\theta\in \bR$. We see $SO(1,1)$ is isomorphic to the split multiplicative torus $\bR^\times _{>0}$ using the logarithm. The unit sphere includes two vectors $\langle 1, 1 \rangle,~~ \langle -1,1\rangle,$ and which are mapped by $a_\theta \in SO(1,1) \simeq \bR^\times_{>0}$ to $$\langle \xi,\tau\rangle=\langle \cosh \theta+\sinh \theta, \cosh \theta+\sinh \theta \rangle,~~ \langle -\cosh \theta+\sinh \theta, \cosh \theta-\sinh \theta \rangle.$$ But evidently $\xi^2 \neq x^2=1$ and $\tau^2 \neq t^2=1$ when $\theta\neq 0$. That is, the image of the unit sphere does not correspond to a sphere in $\xi \tau$ coordinates. In other words the equation $x^2 = c^2 t^2$ is not the equation of sphere when $x,t$ are variable, and likewise $\xi^2=c^2 \tau^2$ is not the equation of sphere when $\xi,\tau$ are both variable and nonconstant. 
-
-The author submits that the above argument positively demonstrates a gap in Einstein's purported proof. The reader may consult Einstein's own words, e.g. \cite{einstein2019relativity}[Ch.11, pp.39] and verify that Einstein does not treat the general case but restricts himself to a velocity parallel to $x$-axis.  
+\end{pmatrix}$, where $\theta\in \bR$. We see $SO(1,1)$ is isomorphic to the split multiplicative torus $\bR^\times _{>0}$ using the logarithm. The unit sphere includes two vectors $\langle 1, 1 \rangle,~~ \langle -1,1\rangle,$ and which are mapped by $a_\theta \in SO(1,1) \simeq \bR^\times_{>0}$ to $$\langle \xi,\tau\rangle=\langle \cosh \theta+\sinh \theta, \cosh \theta+\sinh \theta \rangle,~~ \langle -\cosh \theta+\sinh \theta, \cosh \theta-\sinh \theta \rangle.$$ But evidently $\xi^2 \neq x^2=1$ and $\tau^2 \neq t^2=1$ when $\theta\neq 0$. Thus the quadratic forms $h_1=x^2$ and $h_2=t^2$ are not invariant. Likewise we find the image of the unit sphere $x^2=1$ does not correspond to a sphere in $\xi \tau$ coordinates. %In other words the equation $x^2 = c^2 t^2$ is not the equation of sphere when $x,t$ are variable, and likewise $\xi^2=c^2 \tau^2$ is not the equation of sphere when $\xi,\tau$ are both variable and nonconstant. 
+%Thus we find a gap in Einstein's purported proof. %The curious reader may consult Einstein's own words, e.g. \cite[Ch.11, pp.39]{einstein2019relativity} and verify that Einstein does not treat the general case but restricts himself to a velocity parallel to $x$-axis.  
 
 %Moreover the algebraic expression \begin{equation}\label{a}\xi^2+\eta^2+\zeta^2=c^2 \tau^2\end{equation} is presumed to represent the ``equation of a sphere". However, the algebraic expression \eqref{a} of four independant variables $\xi, \eta, \zeta,\tau$ does \emph{not} represent a geometric sphere unless, e.g., $$\del \tau / \del \xi=0, ~ \del \tau / \del \eta=0, \del \tau / \del \zeta=0$$ for every $\xi, \eta, \zeta, \tau$ satisfying \eqref{a}. As the above two-dimensional case illustrates, this is not the case.
+Thus we find a positive gap in Einstein's argument, c.f. \cite{bryant}, \cite{crothers}. It appears likely to this author that item (A2) is incorrect for another reason, namely that \emph{light} is not something that \emph{travels through space}. A critical examination of this assumption can be found in R. Sansbury's book \cite{sansburyspeed}. Moreover the incompatibility of (A2) with the hypothesis of ``wave--particle" duality is analyzed by A.K.T. Assis \cite[\S 7.2.4, pp.133]{assis1999relational}. This is subject of future investigations.
 
-The above gap in Einstein's argument has been investigated by several critical authors, notably \cite{bryant}, \cite{crothers}. Our goal in this article has been to describe this gap in simple mathematical terms. It appears likely to this author that item (A2) is incorrect for another reason, namely that \emph{light} is not something that \emph{travels through space}. A critical examination of this assumption can be found in R.Sansbury's book \cite{sansburyspeed}. Moreover the incompatibility of (A2) with the hypothesis of ``wave--particle" duality is analyzed by A.K.T. Assis,\cite[\S 7.2.4, pp.133]{assis1999relational}.
+
+%The above gap in Einstein's argument has been investigated by several critical authors, notably \cite{bryant}, \cite{crothers}. Our goal in this article has been to describe this gap in simple mathematical terms. 
 
 %For Einstein, the purpose of his proof was to demonstrate that his so-called law of the propogation of light was indeed compatible with the principle of restricted relativity. 
 
