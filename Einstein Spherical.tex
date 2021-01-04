@@ -62,6 +62,7 @@ sorting=nyt,
 \newcommand{\fB}{\mathfrak{B}}
 \newcommand{\bZ}{\mathbb{Z}}
 \newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bH}{\mathbb{H}}
 \newcommand{\bq}{\bar{Q}[t]}
 \newcommand{\bb}{\bullet}
 \newcommand{\del}{\partial}
@@ -83,14 +84,22 @@ sorting=nyt,
 
 \begin{document}
 
-\title{On Einstein's Alleged Proof of Invariance of Spherical Light Waves in Special Relativity}
+%\title{On Einstein's Alleged Proof of Invariance of Spherical Light Waves in Special Relativity}
+\title{Apparent Lorentz Non Invariance of Spherical Lightwaves in Special Relativity}
+
+
 \author{J. H. Martel}
 \date{\today}
-
+\email{jhmartel@protonmail.com}
 \maketitle
 
-\section{Einstein's Attempted Resolution of an ``Apparent Incompatibility"}
-The subject of this brief note is Einstein's alleged proof of the Lorentz invariance of spherical light waves in his special relativity theory. Our purpose is to describe a positive gap in above mentioned proof, and to further demonstrate the invalidity of its conclusion. We recall that the purpose of Einstein's alleged proof is to reconcile the fundamental assumptions of special relativity, namely
+\tableofcontents
+
+\section{Admitted Apparent Incompatibilities at the Basis of Special Relativity}
+The subject of this brief note is Einstein's alleged proof of the Lorentz invariance of spherical light waves in his special relativity theory. Our purpose here is to describe a positive gap in above mentioned proof, and to further demonstrate the untenability of its conclusions. This is a controversial subject developed by other critical authors, e.g. \cite{bryant}, \cite{crothers}. The present note arises from the author's own study of the controversy, and his attempt to identify the error in plain mathematical terms. 
+
+
+We recall that the purpose of Einstein's alleged proof \cite{einstein2019relativity} is to reconcile the fundamental assumptions of special relativity, namely
 \begin{itemize}
 
 \item[(A1)] that the laws of physics are the same in all nonaccelerated reference frames, i.e. if $K'$ is a coordinate system moving uniformly (and devoid of rotation) with respect to a coordinate system $K$, then natural phenomena run their course with respect to $K'$ according to exactly the same laws as with respect to $K$. 
@@ -101,24 +110,58 @@ The subject of this brief note is Einstein's alleged proof of the Lorentz invari
 
 In Einstein's own words \cite[Ch.7, 11]{einstein2019relativity}:
 
-\begin{quote} ``\emph{There is hardly a simpler law in physics than that according to which light is propagated in empty space. Every child at school knows, or believes he knows, that this propagation takes place in straight lines with velocity $c=300, 000 km/sec$.\ldots Who would imagine that this simple law has plunged the conscientiously thoughtful physicist into the greatest intellectual difficulties?"} \end{quote}
+\begin{quote} 
+``\emph{There is hardly a simpler law in physics than that according to which light is propagated in empty space. Every child at school knows, or believes he knows, that this propagation takes place in straight lines with velocity $c=300, 000 km/sec$.\ldots Who would imagine that this simple law has plunged the conscientiously thoughtful physicist into the greatest intellectual difficulties?"} 
+\end{quote}
 
-Notice the mention of ``law" in the above quote. Einstein presents (A2) as the \emph{law} of propagation of light. To be simultaneously consistent with (A1) then requires (A2) to be satisfied in every nonaccelerated reference frame. However the conjunction of (A1) and (A2), abbreviated (A12), appears contradictory according to classical mechanics and Fizeau's law of addition of velocities, to say the least. However Einstein claims -- and this popularly lauded as among his greatest intellectual achievements -- that this is only an \emph{apparent} incompatibility, and which is resolved by  postulating that Lorentz transformations relate the space- and time-measurements in the reference frames $K, K'$. But we submit that Einstein's argument is incomplete and his conclusion incorrect. Einstein's error in the first steps of his theory has been elaborated by other authors, notably \cite{bryant}, \cite{crothers}. The present note arises from the author's own study of the controversy, and his attempt to identify the incompatibility in plain mathematical terms. In section [ref] we respond to some possible objections, and submit that these two errors invalidate Einstein's argument. 
+Notice the mention of ``law" in the above quote. Einstein presents (A2) as the \emph{law} of propagation of light. To be simultaneously consistent with (A1) requires (A2) be satisfied in every nonaccelerated reference frame. However the conjunction of (A1) and (A2), abbreviated (A12), appears contradictory according to classical mechanics, Galilean transformations, and Fizeau's law of addition of velocities, etc.. However Einstein claims -- and this popularly lauded as among his greatest intellectual achievements -- that this is only an \emph{apparent} incompatibility. The incompatibility is reconciled, according to Einstein's proposal, by postulating Lorentz-Fitzgerald's length contractions and time dilations, c.f. \cite[Ch.XIV]{michelson}. What needs be shown is that Lorentz transformation preserves the form of the law (A2) in every inertial frame $K$. This requires the Lorentz invariance of certain ``spherical waves", as we now discuss.   
+
+
+%Recently the author has learned of the work of Tombe [ref]. 
+
+%In section [ref] we respond to some possible objections, and submit that these two errors invalidate Einstein's argument. 
+
+%The Michelson-Morley experiment demonstrated a null effect: there was no time-variation in the interferometer, no detectable variation with respect to the aether.
+
+
+%and reconciled by postulating Lorentz contractions and time dilations according to the gamma factor $\gamma=\sqrt{1+v^2/c^2}$.
+
+%Einstein's error in the first steps of his theory has been elaborated by other authors, notably \cite{bryant}, \cite{crothers}. The present note arises from the author's own study of the controversy, and his attempt to identify the incompatibility in plain mathematical terms. In section [ref] we respond to some possible objections, and submit that these two errors invalidate Einstein's argument. 
 
 \section{Lorentz Invariant Tensors: Existence and Nonexistence}
 
-The positive gap has a twofold source. Firstly from Einstein's confusing quadratic expressions like \begin{equation}\label{a}\xi^2+\eta^2+\zeta^2=c^2 \tau^2
-\end{equation} with ``the equation of a sphere". But no, for \eqref{a} is a three-dimensional cone in the four variables $\xi, \eta, \zeta, \tau$. The cone does contain numerous ``spherical" two-dimensional subsets. For instance, the standard geometric sphere $S$ centred at the origin simultaneously satisfies \eqref{a} and the further condition $$\frac{1}{2}d(\xi^2+\eta^2+\zeta^2)=\xi d\xi+\eta d\eta +\zeta d\zeta=0.$$ In short, the standard geometric sphere requires that \emph{two}(!) quadratic forms $\xi^2+\eta^2+\zeta^2$ and $c^2\tau^2$ be \emph{simultaneously constant}. This leads us to Einstein's second error, namely that the Lorentz $SO(3,1)$ invariance of the quadratic form $h=x^2+y^2+z^2-c^2t^2$ in no way implies the Lorentz invariance of the forms $h_1=x^2+y^2+z^2$ and $h_2=c^2 t^2.$ 
+The Lorentz transformations arose as a possible solution to the null effect of the Michelson-Morley experiment. The transformations relate the space- and time-coordinates $x,y,z,t$ and $\xi, \eta, \zeta, \tau$ of two inertial observers $K, K'$, respectively. The key assumption is that Minkowski's line element $dx^2+dy^2+dz^2-c^2dt^2$, (recall \eqref{a}) is invariant under Lorentz transformations. Of course $c$ is the constant luminal velocity from (A2). Here we pause to warn against the mathematician's habit of casually setting $c=1$ and treating $t$ as a space-variable immediately comparable to $x,y,z$. The constant $c$ is required to transition from units of ``time" to units of ``space".  %Apples and oranges. Cannot drop the constant c and treat x,t as comparable quantities.
+
+
+%The inertial observers $K, K', \ldots$ of $\bR^3$ are those reference frames, where any pair $K, K'$ of inertial observers are assumed to have a constant relative velocity. This defines the set of inertial frames in bijection with the group of affine motions $\text{Aff}(\bR^3)$ of $\bR^3$. (Formally, the inertial frames are an example of a principal $\text{Aff}(\bR^3)$-space). [Ref] 
+
+
+
+
+
+Now we turn to our critical analysis. We claim the positive gap in Einstein's attempted proof has a twofold source. 
+
+\textbf{ Firstly, an error arises when quadratic expressions like \begin{equation}\label{a}\xi^2+\eta^2+\zeta^2=c^2 \tau^2
+\end{equation} are \emph{misidentified} with ``the equation of a sphere".}
+
+Actually \eqref{a} is a three-dimensional cone in the four variables $\xi, \eta, \zeta, \tau$. Of course the cone contains numerous spherical two-dimensional subsets, but another equation is required. For instance the standard geometric sphere $S$ centred at the origin simultaneously satisfies \eqref{a} and the equation $$\frac{1}{2}d(\xi^2+\eta^2+\zeta^2)=\xi d\xi+\eta d\eta +\zeta d\zeta=0.$$ In short, the standard geometric sphere requires that \emph{two}(!) quadratic forms $\xi^2+\eta^2+\zeta^2$ and $c^2\tau^2$ be \emph{simultaneously constant}. This leads us to Einstein's second error, namely that
+ 
+  \textbf{ the Lorentz invariance of the quadratic form $h=x^2+y^2+z^2-c^2t^2$ in no way implies the Lorentz invariance of the forms $h_1=x^2+y^2+z^2$ and $h_2=c^2 t^2.$ }
 
 %The argument is general and applies to split orthogonal groups of arbitrary rank, e.g. $G=SO(n,1)$,$n=1,2,3,\ldots$. %In the most basic case of $SO(1,1)$, the key observation is that a quadratic expression like $x^2=r^2$ in the $xr$-variables does not represent a ``sphere"; the expression represents a sphere of radius $r$ and only if the additional equation $\del x /\del r =0$ holds for every $x$. But the expression $\del x / \del r$ is not a tensor, i.e. satisfies no invariant 
 
 %\section{}
-To elaborate, Minkowski's form $h=x^2+y^2+z^2-c^2t^2$ is invariant with respect to Lorentz transformations, i.e. the Lie group $G=SO(h)=SO(3,1)$. Invariance says $\xi^2+\eta^2+\zeta^2-c^2 \tau^2$ is numerically equal to $x^2+y^2+z^2-c^2 t^2$ for every Lorentz transform $(\xi, \eta, \zeta, \tau)=\phi.(x,y,z,t)$. But as we argue below, Minkowski's form is essentially the \emph{only} Lorentz invariant quadratic form on $\bR^4$. Now Einstein's argument concerns the geometry of a wave front generated by a light pulse, and the action of the Lorentz group on subsets of the null cone $N=\{h=0\}$. Obviously $N$ is $G$-invariant and defined by the equation $x^2+y^2+z^2=c^2 t^2$. Let $\sC$ be the vector space of (possibly degenerate) quadratic forms $q$ on $\bR^4$, and let $h\in \sC$ be Minkowski's form. 
+
+If we fix a reference frame $K$, then the set of Lorentz transformations is the Lie group $G:=O(h)$ of isometries of the Minkowski form $h=x^2+y^2+z^2-c^2t^2$. Invariance says $\xi^2+\eta^2+\zeta^2-c^2 \tau^2$ is numerically equal to $x^2+y^2+z^2-c^2 t^2$ for every Lorentz transform $\phi$ satisfying $(\xi, \eta, \zeta, \tau)=\phi.(x,y,z,t)$. But as we argue below, Minkowski's form is essentially the \emph{only} Lorentz invariant quadratic form on $\bR^4$. 
+
+Now Einstein's argument concerns the geometry of a wave front generated by a light pulse. That light satifies (A2) implies light trajectories are restricted to the so-called null cone $N=\{h=0\}$. Obviously $N$ is $G$-invariant and defined by the equation $x^2+y^2+z^2=c^2 t^2$. Let $\sC$ be the vector space of (possibly degenerate) quadratic forms $q$ on $\bR^4$, and let $h\in \sC$ be Minkowski's form. 
+
+
+
+
+
 
 %The Lorentz group $G$ acts linearly and irreducibly on $\bR^{3,1}=\bR^4$, so there are no proper $G$-invariant linear subspaces. 
-
-%Now Einstein's argument concerns the geometry of a wave front generated by a light pulse, i.e. the action of the Lorentz group on subsets of the null cone $N=\{h=0\}$. Obviously $N$ is $G$-invariant and satisfies $x^2+y^2+z^2=c^2 t^2$. In formal terms, here is our main observation. Let $\sC$ be the vector space of (possibly degenerate) quadratic forms $q$ on $\bR^4$, and let $h\in \sC$ be Minkowski's form. 
-
 
 %[Note: strictly speaking, we need prove there does not exist any nonzero quadratics $q$ whose restriction $q|_N$ to the null cone is Lorentz invariant]. 
 
@@ -135,10 +178,10 @@ To elaborate, Minkowski's form $h=x^2+y^2+z^2-c^2t^2$ is invariant with respect 
 If $q\in \sC$ is a quadratic form on $\bR^4$ such that the restriction $q|_N$ is $G$-invariant, then $q$ is proportional to $h$. 
 \end{thm} 
 \begin{proof}
-The $G$-action on $N$ is transitive on nonzero vectors. Therefore if $q|_N$ is $G$-invariant, then $q|_N$ is constant. By continuity it follows that $q|_N$ is identically zero since $q|_N=q(0)=0$. So the zero locus of $q$ contains the zero locus of $h$, i.e. \begin{equation}\label{c} N\subset \{q=0\}.
+The $G$-action on $N$ is transitive on nonzero vectors. Therefore if $q|_N$ is $G$-invariant, then $q|_N$ is constant. By continuity it follows that $q|_N$ is identically zero since $q(0)=0$. So the zero locus of $q$ contains the zero locus of $h$, i.e. \begin{equation}\label{c} N\subset \{q=0\}.
 \end{equation}
 
-Now we use a theorem of J. H. Elton to conclude $q$, $h$ are proportional, c.f. \cite{elton2010indefinite}. We outline his argument. Let $q\otimes_\bR \bC$ and $h\otimes_\bR \bC$ be the complexification of the real quadratic forms $q,h$. Thus $q\otimes_\bR \bC: \bR^4 \otimes_\bR \bC \to \bC$ is a complex-valued quadratic form. Elton's proof establishes the following inclusion \begin{equation}\label{b}
+Now we use a theorem of J. H. Elton to conclude $q$, $h$ are proportional, c.f. \cite{elton2010indefinite}. We outline his argument. Let $q\otimes_\bR \bC$ and $h\otimes_\bR \bC$ be the complexifications of the real quadratic forms $q,h$. Thus $q\otimes_\bR \bC: \bR^4 \otimes_\bR \bC \to \bC$ is a complex-valued quadratic form. Elton's proof establishes the following inclusion \begin{equation}\label{b}
 \{h\otimes \bC=0\} \subset \{q\otimes \bC=0\}.
 \end{equation}
 According to the tensor construction we have $h\otimes \bC (x+iy)=h(x)-h(y) + 2i h(x,y)$. Therefore $h\otimes \bC(x+iy)=0$ if and only if $h(x)=h(y)$ and $h(x,y)=0$, where $h(\cdot, \cdot)$ is the bilinear form canonically defined by $h$. Elton's proof reduces to establishing the implication: if \eqref{c} is satisfied, then $h(x)=h(y)$ and $h(x,y)=0$ implies $q(x)=q(y)$ and $q(x,y)=0$ for all $x,y\in \bR^4$. That $q$ vanishes on the null cone $N$ implies $q$  is indefinite if it is not identically zero.
@@ -159,18 +202,69 @@ Now we return to the subject at hand, namely Einstein's alleged proof that (A12)
 %Thus we find a gap in Einstein's purported proof. %The curious reader may consult Einstein's own words, e.g. \cite[Ch.11, pp.39]{einstein2019relativity} and verify that Einstein does not treat the general case but restricts himself to a velocity parallel to $x$-axis.  
 
 %Moreover the algebraic expression \begin{equation}\label{a}\xi^2+\eta^2+\zeta^2=c^2 \tau^2\end{equation} is presumed to represent the ``equation of a sphere". However, the algebraic expression \eqref{a} of four independant variables $\xi, \eta, \zeta,\tau$ does \emph{not} represent a geometric sphere unless, e.g., $$\del \tau / \del \xi=0, ~ \del \tau / \del \eta=0, \del \tau / \del \zeta=0$$ for every $\xi, \eta, \zeta, \tau$ satisfying \eqref{a}. As the above two-dimensional case illustrates, this is not the case.
-Thus we find a positive gap in Einstein's argument, c.f. \cite{bryant}, \cite{crothers}. 
+
+%Thus we find a positive gap in Einstein's argument, c.f. \cite{bryant}, \cite{crothers}. 
+\section{Radius is not Lorentz Invariant Variable}
+
+A dual formulation of the above observation can be phrased as follows. Consider the solutions of the homogeneous wave equation 
+\begin{equation} \label{hw}
+\phi_{xx}+\phi_{yy}+\phi_{zz}-\frac{1}{c^2}\phi_{tt}=0.
+\end{equation} 
+If $\phi$ is expressed as a function of $\xi, \eta, \zeta, \tau$ using a Lorentz transformation, then evidently $\phi=\phi(\xi, \eta, \zeta, \tau)$ is again a solution of the homogeneous wave equation $$\phi_{\xi \xi}+\phi_{\eta \eta}+\phi_{\zeta \zeta}-\frac{1}{c^2}\phi_{\tau \tau}=0.$$ This is obvious. \textbf{However what is perhaps not obvious is that the class of ``radial solutions" of \eqref{hw} is \emph{not} Lorentz invariant, because indeed there is no Lorentz invariant definition of ``radius".} Recall a solution $\phi=\phi(x,t)$ of \eqref{hw} is said to be radial by an observer $K$ iff $\phi(Ax,t)=\phi(x,t)$ for every rigid motion $A\in SO(3)$ in the space variables $x,y,z$. But implicitly this requires a Lie group representation $\rho$ of $SO(3)$ into the Lorentz group $G\simeq O(3,1)$, and this representation of the maximal compact subgroup is noncanonical, where the quotient $G/SO(3)$ is contractible modulo a finite subgroup and is a model of hyperbolic space $\bH^3$. Different inertial observers $K, K'$ generally choose different orthogonal symmetry groups, for instance as defined by their own ``sum of squares" formula (applied to physical squares $\xi^2$, $\eta^2$, $\zeta^2$ in their local variables $\xi, \eta, \zeta, \tau$). Of course the Minkowski element \eqref{a} is invariant and canonical, but any attempted decomposition into ``spatial" and ``time" parts is arbitrary to the observer and not Lorentz invariant. And for the motion of light pulses according to (A12) the Minkowski element vanishes identically, and the only canonical tensor element becomes the constant zero element. After a Lorentz change of variables, we find a new solution $\phi'=\phi(\xi, \eta, \zeta, \tau)$, but this solution needs not be radial in the above sense,. Indeed the rigid space motion $A$ does not often preserve the space coordinates $\xi, \eta, \zeta$, and does not act on the subspace generated by $\xi, \eta, \zeta$. More specifically, $A$-motions will nontrivially depend on the $K'$-time variable $\tau$.
+
+
+%Change of variables formula would require the $G$-conjugate $\rho^g$, $g\in G$, 
+
+
+
+
 
 
 
 \section{Objections and Response}
-To conclude we briefly recall some popular objections to the above line of reasoning. 
+To conclude we briefly recall some popular objections to the above line of reasoning. The author submits this article in good faith to all honest persons, and we attempt to simulate some critical discourse with a reasonable reader.
 
-First one might object that spheres in the frame $K$ are well known to correspond to ellipsoids in $K'$. But the critics neglect that the Lorentz contraction is assumed to be a property of \emph{material} objects, where material spheres in $K$ are seen as material ellipsoids in $K'$. But light spheres are not material, and not subject to Lorentz contraction. 
+First one might object that our argument simply reduces to the observation that spheres in the frame $K$ are transformed to ellipsoids in $K'$, as well-known \cite[\S 4]{einstein1905electrodynamics}. But we remind the reader that the Lorentz contraction is assumed to effect \emph{material} objects (even independantly of the nature of the material), and such that material spheres in $K$ are seen as material ellipsoids in $K'$ (where the eccentricity of the $K'$-ellipsoid is nontrivial, and independant of the material nature of the sphere). But we respond that light spheres are not material, and not themselves subject to Lorentz contraction if (A2) holds. At least not without further evidence and hypotheses. %Evenmore (A2) clearly requires light waves be spherical in every reference frame if they are spherical in one reference frame.
 
-Secondly critics might object that (A12) only requires the consistent \emph{measurement} of $c$ in arbitrary reference frames $K, K'$. But we remind critics that space- and time-measurements are always dependant on material objects, and often non local, i.e. the source and receiver might be separated by large distance. The impossibiliy of synchronizing non local clocks leads to the apparent impossibility of measuring the ``one-way" velocity of light. It strikes the author that the incompatibility of (A12) is not merely ``apparent" but actually \emph{essential}, and even natural evidence that (A2) is not a proper natural law. That all measurements of ``c" only succeed in measuring the ``two-way" velocity of light, where the source and target coincide is discussed in \cite{zhang1997special}, \cite{israel}. See \cite{vid} for entertaining introduction.
+Secondly critics might object that (A12) only requires the consistent \emph{measurement} of $c$ in arbitrary reference frames $K, K'$. This would replace the formal ``law" (A2) with a rule of thumb for measurements. And indeed this article welcomes such an approach, and quickly we are led to an important experimental difficulty at the core of SR. For we remind the reader that space- and time-measurements are always dependant on material objects, and often non local, i.e. where the source and receiver are possibly separated by large and great distances. The impossibiliy of synchronizing non local clocks leads to the apparent impossibility of measuring the ``one-way" velocity of light. It strikes the author that the incompatibility of (A12) is not merely ``apparent" but actually \emph{essential}, and even natural evidence that (A2) is not a proper natural law. That all measurements of $c$ only succeed in measuring the ``two-way" or ``round-trip" velocities of light where source and reciever coincide, is discussed in \cite{zhang1997special}, \cite{israel}. See also \cite{vid} for entertaining introduction.
 
-It appears likely to this author that (A2) is incorrect for another reason, namely that \emph{light} is not something that \emph{travels through space}. A critical examination of this assumption can be found in R. Sansbury's book \cite{sansburyspeed}. Moreover the incompatibility of (A2) with the hypothesis of ``wave--particle" duality is analyzed by A.K.T. Assis \cite[\S 7.2.4, pp.133]{assis1999relational}. This is subject of future investigations.
+Thirdly, the book \cite[pp.8-10, 21-22]{rindler} attempts 
+\begin{quote}
+\emph{``in spite of its historical and heuristic importance, $\ldots$ to de-emphasize the logical role of the law of light propagation (A2) as a pillar of special relativity."}
+\end{quote}
+Rindler further claims 
+\begin{quote}
+\emph{``a second axiom is needed \emph{only} to determine the value of a constant $c$ of the dimensions of a velocity that occurs naturally in the theory. But this could come from any number of branches of physics -- we need only think of the energy formula $E=mc^2$, or de Broglie's velocity relation $u v =c^2$." }
+\end{quote}
+The above objection is very interesting, and to which we have a simple response, namely that the above quoted formulas are \emph{equivalent} to (A2), and not independant in any physical sense. Even the Weber-Kohlrausch formula \cite{awk}, for example, is another form of (A2). So another independant law involving $c$ could potentially serve as a logical substitute for (A2), but this is hypothetical since no such formula appears to exist -- thus far all formulas involving $c$ are based essentially on some form of (A2). So the pillar is unmoved, logically speaking.  
+
+Moreover the incompatibility of (A2) with the hypothesis of ``wave--particle" duality is analyzed by A.K.T. Assis \cite[\S 7.2.4, pp.133]{assis1999relational}. This is subject of future investigations.
+
+
+%Fourth, there is very important observation of A.K.T. Assis that even the so-called wave-particle duality interpretation is untenable in the following sense:
+
+
+%For indeed Einstein derives $E=mc^2$ from a type of ``kinetic energy" formula for massless light pulses [ref].
+
+%Our response to this third objection is that the above formulas cannot be (and never have been) so used to identify $c^2$ as a velocity. A single formula between three variables, e.g. $E,m,c$ or $u,v,c$, cannot be used to define a variable until the remaining two variables are defined and computable. 
+
+%Our response is that the above quoted formulas are equivalent to Weber Kroschauer formula relating electric and magnetic permittivity.
+
+%So we rebut Rindler's third objection by indicating that apparently ``light" has a definite law, and all fundamental formulas involving light are physically equivalent to (A2) or some weaker form. 
+
+
+\section{R.Sansbury's Experiment: Does Light Travel Through Space?}
+Finally we think it possible that (A2) is incorrect for another reason, namely that \textbf{\emph{light} is not something that \emph{travels through space}}. The daring idea was introduced and developed by R. Sansbury, for example in his interesting book \cite{sansburyspeed}, which begins with the following experiment which we quote in full:
+\begin{quote}
+\emph{ (Case 1) A 15 nanosecond light pulse from a laser was sent to a light detector, 30 feet away. When the light pulse was blocked at the photodiode during the time of emission, but unblocked at the expected time of arrival, 31.2 nanoseconds after the beginning of the time of emission, for 15 nanosecond duration, little light was received. (A little more than the $4mV$ noise on the oscilloscope). This process was repeated thousands of times per second.}
+
+\emph{(Case 2) When the light was unblocked at the photodiode during the time of emission (15 nanosecond) but blocked after the beginning of the time of emission, during the expected time of arrival for 15 nanosecond, twice as much light was received ($8mV$). This process was repeated thousands of times per second.}
+
+\emph{This indicated that light is not a moving wave or photon, but rather the cumulative effect of instantaneous forces at a distance. That is, undetectable oscillations of charge can occur in the atomic nuclei of the photodiode that spill over as detectable oscillations of electrons after a delay.}
+\end{quote}
+
+The above extremely important experiment has not apparently been repeated, despite it's simplicity. We refer the reader to R. Sansbury's book for further details.
+
 
 
 %Thus observation strictly supports only a weaker form (A2w) which might be formulated as follows.
