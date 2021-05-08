@@ -7,7 +7,7 @@ Admittedly, an apparent incompatibility arises between the two basic assumptions
 
 (A2) the so-called Law of Propagation of Light along straight lines at a constant velocity in vacuum of about one foot per nanosecond. 
 
-Apparently the conjunction (A12) := (A1) AND (A2) is a contradiction, at leaest according to classical mechanics, Fizeau's law of addition of velocities, etc...
+Apparently the conjunction (A12) := (A1) AND (A2) is a contradiction, at least according to classical mechanics, Fizeau's law of addition of velocities, etc...
 
 The reconciliation of this apparent incompatibility is achieved -- according to Einstein's reasoning -- by postulating the Lorentz-Fitzgerald formulae relating the coordinates (x,y,z,t) of inertial frame K, and (ξ,η,ζ,τ) of inertial frame K'. These formulae are one explanation for the observed null effect in the Michelson-Morley interferometer fringe experiment.
 
