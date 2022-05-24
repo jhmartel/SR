@@ -1,8 +1,10 @@
 # Einstein's Special Relativity
 
-There is an extremely subtle error in the foundations of special relativity, especially as treated by Einstein himself in his own accounts. Admittedly, an apparent incompatibility arises between the two basic assumptions of the theory, namely 
+The attached article is our Habilitationschrift, meaning it is somewhat an expository article wherein we study an important issue. Here the issue is foundations of special relativity (SR). 
 
-(A1) the principle of restricted relativity, that the laws of physics have the same form (what the means is not well defined by AE himself); and 
+Let us give a preview of some issues in the SR theory. There is an extremely subtle error in the foundations of special relativity, especially as treated by Einstein himself in his own accounts. Admittedly, an apparent incompatibility arises between the two basic assumptions of the theory, namely 
+
+(A1) the principle of restricted relativity, that the laws of physics have the same form (what this means is not well defined by AE himself); and 
 
 (A2) the so-called Law of Propagation of Light along straight lines at a constant velocity in vacuum of about one foot per nanosecond. 
 
