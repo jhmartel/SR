@@ -1,5 +1,7 @@
 # Einstein's Special Relativity
 
+Note added 2022-06-18: we are in process of completing this article, and need update the final section with our version of a modified Fizeau experiment which is intended to replicate Sansbury's proposed experiment. 
+
 The attached article is our Habilitationschrift, meaning it is somewhat an expository article wherein we study an important issue. Here the issue is foundations of special relativity (SR). 
 
 Let us give a preview of some issues in the SR theory. There is an extremely subtle error in the foundations of special relativity, especially as treated by Einstein himself in his own accounts. Admittedly, an apparent incompatibility arises between the two basic assumptions of the theory, namely 
