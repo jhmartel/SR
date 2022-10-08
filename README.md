@@ -23,6 +23,4 @@ Then the error in Einstein's alleged proof can be thus summarized: radius is not
 
 We welcome critical comments and responses. In the section 4 we give our responses to some popular objections. 
 
-We would upload the above article to ARXIV, however we fear the reactions of those fellow scientists who reject outright even the possibility that Einstein (and his followers) could be in error for 100+ years. 
-
-Until then, all comments and suggestions are welcome at jhmartel *at* protonmail *dot* com.
+- JHMLabs **at** gmail **dot** com
