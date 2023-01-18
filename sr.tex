@@ -1,4 +1,4 @@
-\documentclass[12pt]{amsart}
+\documentclass[12pt]{article}
 \usepackage{mathrsfs}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -85,17 +85,17 @@ sorting=nyt,
 \begin{document}
 
 
-\title[On Critical Foundations of Special Relativity]{Foundations of Special Relativity and Light Propagation in Vacuum : A Critical Review.}
+\title{Foundations of Special Relativity and Light Propagation in Vacuum : A Critical Review.}
 %Lorentz Non Invariance of Spherical Lightwaves in Special Relativity}
 
 
 \author{J. H. Martel}
 \date{\today}
-\email{jhmartel@proton.me}
+%\email{jhmartel@proton.me}
 \maketitle
 
 \begin{abstract}
-This essay is a critical analysis of the mathematical foundations of Einstein's special relativity (SR). The essay is written for both adherents and skeptics of SR, and our primary aim is mathematical rigour and clarity. Constructive comments are welcome. 
+This essay is a critical analysis of the mathematical foundations of Einstein's special relativity (SR). The essay is written for both adherents and skeptics of SR, and our primary aim is mathematical rigour and clarity. Constructive comments are welcome at the author's address. 
 
 
  %The purpose of the essay is to clarify some controversies in the foundations of SR
@@ -112,8 +112,8 @@ This essay is a critical analysis of the mathematical foundations of Einstein's 
 
 
 
-\section{Introduction}
-This article is a critical essay on the mathematical foundations of special relativity (SR) and the propagation of light in vacuum. The present work developed out of the author reviewing several articles \cite{bryant}, \cite{crothers} which claimed there were errors in Einstein's original proof of the Lorentz invariance of spherical light waves, see \S \ref{einsteinproof} below. The purpose of this essay is to present a critical and logical review of controversial issues in SR in plain mathematical terms, and is written for both adherents and skeptics of SR. 
+\section*{Introduction}
+This article is a critical essay on the mathematical foundations of special relativity (SR) and the propagation of light \emph{in vacuum}. The present work developed out of the author reviewing several articles \cite{bryant}, \cite{crothers} which claimed there were errors in Einstein's original proof of the Lorentz invariance of spherical light waves (c.f. \S \ref{einsteinproof}). The purpose of this essay is to present a critical and logical review of controversial issues in SR in plain mathematical terms. 
 
 %, but also his assistant N. Rosen and H. Bondi at various points. Our purpose is not to invalidate the entire field of SR, and this is even impossible since most results are correct formal consequences of their assumptions.
 
@@ -123,9 +123,6 @@ This article is a critical essay on the mathematical foundations of special rela
 
 %We emphasize the problem of propagation of light in vacuum, leaving the interpretation of SR to matter aside.
 
-
-
-
 %Controversy and skepticism has always been an important aspect of Einstein's revolution of 20th century physics (c.f. \cite{kennefick}). The author's interest in this subject began by reviewing \cite{bryant}, \cite{crothers}, which claimed there were errors in Einstein's original proof of the Lorentz invariance of \emph{spherical light waves}. Our review of these errors is discussed in \S \ref{einsteinproof} below. This error was correctly identified by the previous authors, but does not -- in this author's opinion -- necessarily disrupt the development of SR. Instead the error indicates that SR in practice requires additional assumptions concerning the propagation of light in vacuum.
 
 
@@ -133,7 +130,7 @@ This article is a critical essay on the mathematical foundations of special rela
 
 
 
-The sections of this essay are structured as follows. In \S \ref{s1} we present Einstein's assumptions (A1), (A2) which logically underpin SR, and the admitted apparent incompatibility in their conjunction (A12). In \S \ref{s3} we introduce the Lorentz formulae and the null cone and consider consequences of (A12) in the photon model of light, but here find the law of propagation of the photon particle is \emph{underdetermined} by (A12). This is counter to the Riemannian intuition, and says one cannot determine the time-position or motion of a photon moving along a straight line with speed $c$ in vacuum. Indeed the photon's motion with time still has degrees of freedom even though bound to a line and having speed $c$. In \S \ref{einsteinproof} we examine Einstein's proof of the compatibility of (A12) and his appeal to spherical light waves. We here identify two critical errors in Einstein's argument, but summarized in the fact that $r$ is not a Lorentz invariant variable. In \S \ref{compute} we illustrate with some elementary computations in the $1+1$ spacetime $\bR^{1,1}$. Thus we argue that (A2) is an incomplete description of light, and additional assumptions are necessary. These further assumptions were provided by Levi-Civita in the formulas of geometric optics. The wave model is considered in \S \ref{wes} where we examine the homogeneous wave equation (HWE). The Lorentz non invariance of spherical lightwaves is phrased in terms of the impossibility of defining a Lorentz invariant \emph{radius} and a Lorentz invariant class of radial solutions to HWE. In \S \ref{objections} we try to anticipate and address some counter-objections to our arguments. In \S \ref{sansbury} we enter into controversial issue of Ralph Sansbury's experiment, and an intriguing alternative to the assumptions (A2). 
+The essay is structured as follows. In \S \ref{s1} we present Einstein's assumptions (A1), (A2) which logically underpin SR, and the admitted apparent incompatibility in their conjunction (A12). In \S \ref{s3} we introduce the Lorentz formulae and the null cone and consider consequences of (A12) in the photon model of light, but here find the law of propagation of the photon particle is \emph{underdetermined} by (A12). This is counter to the Riemannian intuition, and says one cannot determine the time-position or motion of a photon moving along a straight line with speed $c$ in vacuum, and the photon's motion still has degrees of freedom though bound to a line and having so-called ``speed" $c$. In \S \ref{einsteinproof} we examine Einstein's proof of the compatibility of (A12) and his appeal to spherical light waves. Here we claim to identify two critical errors in Einstein's classical argument. These errors are summarized in the fact that so-called \emph{radius $r$ is not a Lorentz invariant variable}. In \S \ref{compute} we illustrate with some elementary computations in the $(1+1)$-spacetime $\bR^{1,1}$. Thus we argue that (A2) is an incomplete description of light, and additional assumptions are necessary. The wave model is considered in \S \ref{wes} where we examine the homogeneous wave equation (HWE). The Lorentz non-invariance of spherical lightwaves is phrased in terms of the impossibility of defining a Lorentz invariant \emph{radius} and a \emph{Lorentz invariant radial solutions to HWE}. In \S \ref{objections} we look to anticipate and address possible objections to our arguments. In \S \ref{sansbury} we enter into controversial issue of Ralph Sansbury's experiment, and suggest an alternative to the assumptions (A2). 
 
 
 
@@ -152,7 +149,8 @@ The sections of this essay are structured as follows. In \S \ref{s1} we present 
 
 
 \section{Assumptions and Difficulties in SR}\label{s1}
-We begin our study of the foundations of SR with Einstein's presentation of the theory \cite{einstein2019relativity}, \cite{einstein1905electrodynamics}. In Einstein's words \cite[Ch.7, 11]{einstein2019relativity}:
+
+Our analysis of special relativity (SR) begins with the fundamental assumptions of the entire theory. We begin with Einstein's own presentation of his theory \cite{einstein2019relativity}, \cite{einstein1905electrodynamics}. In Einstein's words \cite[Ch.7, 11]{einstein2019relativity}:
 
 \begin{quote} 
 ``\emph{There is hardly a simpler law in physics than that according to which light is propagated in empty space. Every child at school knows, or believes he knows, that this propagation takes place in straight lines with velocity $c=300,000 ~km/sec$ [one foot per nanosecond].\ldots Who would imagine that this simple law has plunged the conscientiously thoughtful physicist into the greatest intellectual difficulties?"} 
@@ -167,11 +165,11 @@ The elaboration of the ``intellectual difficulties" of this supposedly ``simple 
 
 \end{itemize}
 
-Assumption (A1) is generally known as the \emph{principle of restricted relativity}, and represents a meta principle that the \emph{form} of the laws of physics need be the same for all observers in uniform relative motion. This assumption introduces the class of inertial frames and raises the question of how to ``change variables" between different inertial frames $K, K'$.
+Assumption (A1) is generally known as the \emph{principle of restricted relativity}, and represents a meta principle which posits that the \emph{form} of the laws of physics needs be the same for all observers in uniform relative motion. This assumption introduces the class of inertial frames and raises the question \emph{how to change variables between different inertial frames $K, K'$?}
 
-It's left somewhat undefined what a ``law" is, but we might assume law includes mathematical laws. More specifically (A2) is assumed to represent such a law, and this is clear from the ``schoolboy" quoted above. The assumption (A2) is coined the \emph{law} of \emph{propagation} of light in vacuum. 
+Einstein does not precisely defined what a ``law" is, but we might assume law includes mathematical laws. More specifically (A2) is assumed to represent such a law, and this is clear from the ``schoolboy" quoted above. The assumption (A2) is coined the \emph{law} of \emph{propagation} of light in vacuum. 
 
-The great intellectual difficulty arises from the conjunction of (A1) and (A2), abbreviated (A12). If (A2) is to be consistent with (A1), then the law (A2) must hold true in every inertial reference frame $K'$. But (A12) appears contradictory to classical mechanics, e.g. Fizeau's law of addition of velocities and the additivity of energy. Yet Einstein claims the difficulty is only an \emph{apparent incompatibility}. The incompatibility is reconciled according to Einstein's reasoning by postulating Lorentz-Fitzgerald's length contractions and time dilations, c.f. \cite[Ch.XIV]{michelson}. This claim that Lorentz transformations reconcile (A12) in fact contains two assertions: 
+What is the intellectual difficulties arising from the conjunction of (A1) and (A2), abbreviated (A12)? To begin (A2) assumes the law of propagation, and (A1) should require this law to hold true in every inertial frame $K'$. But (A12) is contradictory to classical mechanics, specifically the additivity of energy and Fizeau's law of addition of velocities. Yet Einstein asserts that these difficulties are only \emph{apparent incompatibilities}. These incompatibilities are reconciled -- according to Einstein's reasoning -- by postulating Lorentz-Fitzgerald's formulae for length contractions and time dilations, e.g.\cite[Ch.XIV]{michelson}. The assertion that Lorentz transformations reconcile (A12) in fact contains two propositions: 
 
 \begin{itemize}
 \item[(i)] that inertial frames $K, K'$ are related by Lorentz transformations; 
@@ -179,7 +177,7 @@ The great intellectual difficulty arises from the conjunction of (A1) and (A2), 
 \item[(ii)] that the law of propagation of light (A2) is Lorentz covariant, i.e. if (A2) is satisfied in $K$, then (A2) is satisfied in every Lorentz translate $K'=\lambda.K$.
 \end{itemize}
 
-The assumption (A2) does not explicitly assume either a particle or wave model of light. As we describe below, Einstein attempts to prove assertion (ii) from a wave-theoretic viewpoint, arguing in terms of light pulses and spherical wavefronts. However the Minkowski linear algebra which arises from the Lorentz transformations represents the photon corpuscular model. Our critical analysis applies to both models, and in fact we argue that ultimately (A12) is incompatible with \emph{both} the particle and wave interpretations of light. We develop our argument and line of reasoning in the following sections.  
+We remark that the assumption (A2) does not explicitly assume either a particle or wave model of light. As we describe below, Einstein attempts to prove assertion (ii) from a wave-theoretic viewpoint, arguing in terms of light pulses and spherical wavefronts. However the Minkowski linear algebra which arises from the Lorentz transformations represents the photon corpuscular model. Our critical analysis applies to both models. We argue that (A12) is incompatible with \emph{both} the particle and wave models of light. Our argument and line of reasoning is presented in the following sections.  
 
 
 
@@ -197,7 +195,7 @@ The assumption (A2) does not explicitly assume either a particle or wave model o
 
 %\subsection{Lorentz Transformations and Minkowski's Form $h=ds^2$}\label{li}
 
-For a proper analysis of (A2) we must remind the reader of the distinction between ``velocity" and ``speed".  As is well known, velocity is a vector in a tangent space, an ``arrow" which has a magnitude (``speed") and a direction. We read (A2) as declaring that light propagates in vacuum in fixed directions (along straight lines) and with constant magnitude (the ``speed" $c$). This is the standard Riemannian conception of vector. Yet in Lorentzian geometry, the magnitude or ``speed" loses its Riemannian meaning, and as we argue below, the law of propagation (A2) is strongly underdetermined from the Riemannian perspective. 
+For a proper analysis of (A2) we must remind the reader of the distinction between ``velocity" and ``speed".  As is well known, velocity is a vector in a tangent space, an ``arrow" which has a magnitude (``speed") and a direction. We read (A2) as declaring that light propagates in vacuum in fixed directions (along straight lines) and with constant magnitude (``speed" $c$). This is the standard Riemannian interpretation of velocity. Yet in Lorentzian geometry, the magnitude or ``speed" loses its Riemannian meaning, and as we argue below, the law of propagation (A2) is strongly underdetermined from the Riemannian perspective. 
 
 
 
